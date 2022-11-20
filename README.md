@@ -45,7 +45,7 @@ The evaluation metric for this hackathon would be RMSE.
 Note :- TimeStamp in this Dataset is a String Object not a datatime object so we need to Change the dtype to datetime[64ns]
 
 #### Explanatory Data Analysis [EDA]
-- Deriving Data & Time Features from datetime column
+- **Deriving Data & Time Features from datetime column** [Derived Features]
     - Hour
     - year
     - month
@@ -64,6 +64,29 @@ Note :- TimeStamp in this Dataset is a String Object not a datatime object so we
         ![image](https://user-images.githubusercontent.com/100984625/202913271-7c0c06b7-6b7f-4866-914b-121da5bba327.png)
     -  Year vs Energy
         ![image](https://user-images.githubusercontent.com/100984625/202913321-b5e0d26c-99c0-411d-91d8-7fe115cbeb8a.png)
+
+ - **Variance Inflation Factor**
+        
+        A variance inflation factor (VIF) is a measure of the amount of multicollinearity in regression analysis. Multicollinearity exists when there is a correlation between multiple independent variables in a multiple regression model. This can adversely affect the regression results.
+        
+        According Removing Features where VIF is very high i.e year, is_quarter_date
+       
+ -  **Standardization Using Z Score**
+ -  **Feature Engineering**
+ -  **Categorical encoding using Label-Encoding**
+ 
+ ``` Note 
+    
+    We Need to Round Function in the Pandas to decimal values to 2 so that Computional Power will be reduced while Model Training.
+ 
+```
+
+ ``` Note 
+       Few Important Points :--
+    .       -> Keep remind of the Shape
+            -> Energy Demand for the past 9 years is on rise
+            -> Found to be their is some trend in Month, Weekday, Season and Others
+```
 
 
 
