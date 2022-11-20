@@ -26,3 +26,51 @@ The evaluation metric for this hackathon would be RMSE.
 
 ![image](https://user-images.githubusercontent.com/100984625/202912051-c0b66ec7-cc1d-4636-bb08-43c310b1bfba.png)
 
+## Approach & Concept 
+
+#### Basic Operation Prior Anything
+- Installing all the Basic Libraries
+- Checking the Default Path
+- Checking the Files in that Path 
+
+#### Read training and Test data using pandas 
+
+#### Data Cleaning and Wrangling
+- Handling of all the Missing Values using Various operation
+    -In this Dataset There where Missing Values in the Target Variable **['Energy']**
+- Handling of infinite, NaN , Null Values
+- Handling of Missing Rows & Columns
+- Using Dropna 
+
+Note :- TimeStamp in this Dataset is a String Object not a datatime object so we need to Change the dtype to datetime[64ns]
+
+#### Explanatory Data Analysis [EDA]
+- Deriving Data & Time Features from datetime column
+    - Hour
+    - year
+    - month
+    - day
+    - day_of_week
+    - is_quarter_date
+    - is_weekend
+    - Type_of_Day
+    - Season
+- Data Visualization
+    -  Hour vs Energy
+        ![image](https://user-images.githubusercontent.com/100984625/202913177-275c32b3-f1ea-4170-9127-9c22e03b0df5.png)
+    -  Season vs Energy
+        ![image](https://user-images.githubusercontent.com/100984625/202913223-9a647664-bff7-400c-8f49-91a03f465a84.png)
+    -  Type_of_Day vs Energy
+        ![image](https://user-images.githubusercontent.com/100984625/202913271-7c0c06b7-6b7f-4866-914b-121da5bba327.png)
+    -  Year vs Energy
+        ![image](https://user-images.githubusercontent.com/100984625/202913321-b5e0d26c-99c0-411d-91d8-7fe115cbeb8a.png)
+
+
+
+
+
+
+
+
+
+
