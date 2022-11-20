@@ -88,7 +88,29 @@ Note :- TimeStamp in this Dataset is a String Object not a datatime object so we
             -> Found to be their is some trend in Month, Weekday, Season and Others
 ```
 
+#### Model & Evaluation
 
+- Machine Learning Algorithms 
+        - Linear Regression(Ridge)
+        - Neural Network
+        - Random Forest
+        - Catboost 
+        - XGBoost Regressor
+        - XGBoost RF Regressor
+        - Linear Regression(lasso)
+        - Linear Regression
+        - Light Gradient Boosting
+
+- Train Test Split using Scikit-Learn
+- Feature Importance
+    ![image](https://user-images.githubusercontent.com/100984625/202914581-96630fd8-8e93-415d-9a28-38374b7d6044.png)
+- Predicting Test.Values 
+
+#### Submission
+
+SS.to_csv('Submission_JOTNovXGBRF.csv', index=False)
+
+Submitting the files in .csv Format
 
 
 
